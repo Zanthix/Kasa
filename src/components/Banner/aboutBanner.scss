@@ -1,0 +1,19 @@
+.aboutBanner {
+    width: 90%;
+    height: 223px;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url(../../assets/bannerAboutPicture.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(.9);
+}
+
+@media screen and (min-width: 700px) {
+    .about-banner {
+        border-radius: 25px;
+    }
+}
