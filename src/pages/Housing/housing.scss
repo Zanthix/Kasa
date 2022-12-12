@@ -1,0 +1,76 @@
+@import '../../styles/settings';
+
+.housing-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    overflow-x: hidden;
+    flex-grow: 1;
+    padding: 40px;
+
+    .housing-inner-container {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 700px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .housing-title-location {
+        margin-top: 10px;
+
+        @media screen and (min-width: 700px) {
+            margin: 30px 0 24px;
+        }
+        
+        .housing-title {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 142.6%;
+            color: #FF6060;
+        }
+    
+        .housing-location {
+            margin: 0 0 20px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 142.6%;
+            color: #FF6060;
+        }
+    }
+
+    .rating-host-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 33px;
+        margin: 16px 0;
+        transition: .5s;
+
+        @media screen and (min-width: 700px) {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 21px;
+        }
+    }
+    
+    .collapse-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        gap: 20px;
+    }
+    .Collapse-wrapper{
+        width: 600px;
+        @media screen and (max-width:700px) {
+            width: 300px;
+        }
+    }
+    .Collapse-info{
+        margin-left: 0;
+    }
+}

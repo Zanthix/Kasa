@@ -1,0 +1,44 @@
+.bloc-hote {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 135px;
+    height: 33px;
+    gap: 10px;
+
+    .nom-hote {
+        position: relative;
+        width: min-content;
+        text-align: end;
+        font-size: 18px;
+        font-weight: 500;
+        color: #FF6060;
+    }
+
+    .avatar {
+        position: relative;
+        height: 33px;
+        min-width: 33px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            object-fit: contain;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .bloc-hote {
+        height: 64px;
+    
+        .avatar {
+            min-width: 64px;
+            height: 64px;
+    
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+}

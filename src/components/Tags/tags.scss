@@ -1,0 +1,31 @@
+.housing-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #FF6060;
+    transition: .5s;
+    
+    span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 142.6%;
+        color: #F7F7F7;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .tag {
+        border-radius: 10px;
+    }
+
+}

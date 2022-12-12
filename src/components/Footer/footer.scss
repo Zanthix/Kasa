@@ -7,10 +7,13 @@ footer {
     height: 209px;
     gap: 30px;
     text-align: center;
-    font-size: clamp(0.75rem, 0.3166rem + 1.849vw, 1.5rem);
+    font-size: 24px;
     background-color: black;
     color: white;
     margin-top: auto;
+    @media screen and (max-width:1024px) {
+        font-size: 12px;
+    }
 
     img {
        width: 122px;

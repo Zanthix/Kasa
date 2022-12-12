@@ -1,21 +1,32 @@
 .Collapse-info {
     margin-left: 15%;
+    @media screen and (max-width:1024px) {
+        margin-left: 0;
+    }
 
     .Collapse-wrapper {
         max-width: 1023px;
 
         .Collapse {
-            font-size: clamp(0.8125rem, 0.5145rem + 1.2717vw, 1.5rem);
+            font-size: 22px;
             font-weight: 500;
         }
 
         .Collapse-content {
             .content {
                 padding: 20px;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 400;
+
+                @media screen and (max-width:700px) {
+                    font-size: 12px;
+                }
             }
         }
+    }
+
+    @media screen and (max-width:700px) {
+        margin-left: 0;
     }
 }
 
@@ -33,6 +44,10 @@
 
     @media screen and (min-width: 700px) {
         border-radius: 10px;
+    }
+
+    @media  screen and (max-width: 1024px) {
+        width: auto;
     }
 
     .Collapse {
@@ -55,7 +70,7 @@
 
     button {
         position: absolute;
-        width: 15px;
+        width: 24px;
         height: 15px;
         right: 10px;
         background: none;
