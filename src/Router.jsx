@@ -7,7 +7,7 @@ import Housing from './pages/Housing/Housing';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-const App = () => {
+const Router = () => {
     return(
         <BrowserRouter>
             <Header />
@@ -22,4 +22,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Router;
