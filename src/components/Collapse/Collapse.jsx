@@ -13,7 +13,7 @@ const Collapse = ({title, children}) => {
             <div className='Collapse-wrapper'> 
                 <div className="Collapse">{title}
                     <button type='button' onClick={() => setShow(!show)}>
-                        {show === true ? <img className='arrow arrow-open' src={arrow} alt="voir les équipements" /> : <img className='arrow arrow-close' src={arrow} alt="masquer les équipements" />}
+                        {show === true ? <img className='arrow arrow-open' src={arrow} alt="" /> : <img className='arrow arrow-close' src={arrow} alt="" />}
                     </button>
                 </div>
 

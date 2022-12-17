@@ -13,14 +13,10 @@
             margin-right: 40px;
             text-decoration:none;
         }
-        a:active, :hover{
-            border: solid 2px #FF6060;
-            border-left: hidden;
-            border-top: hidden;
-            border-right: hidden;
-            overflow: hidden;
+        .active{
+            text-decoration: underline 2px #FF6060;
+            padding: 3px;
         }
-       
     }
 }
 
@@ -32,6 +28,7 @@
         img{
             width: 90px;
             height: 45px;
+            object-fit: contain;
         }
         nav{
             width: fit-content;
